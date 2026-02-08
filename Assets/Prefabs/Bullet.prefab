@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6873750785714678219}
   - component: {fileID: 5680740995739583620}
   - component: {fileID: -6503852793768144234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   flySpeed: 5
+  damage: 1
 --- !u!50 &5680740995739583620
 Rigidbody2D:
   serializedVersion: 5

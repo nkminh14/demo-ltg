@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1008492842860767972}
   - component: {fileID: 6986253840912294716}
   - component: {fileID: 8672262011899494399}
+  - component: {fileID: 1181546586789479265}
+  - component: {fileID: 4437279418911098394}
   - component: {fileID: 7751100204438973980}
   m_Layer: 0
   m_Name: Enemy_straight_projectile
@@ -171,6 +173,35 @@ MonoBehaviour:
   rotationByPath: 1
   loop: 1
   movingIsActive: 0
+--- !u!114 &1181546586789479265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9081966238130550939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98187cbc744ec864ea45175a5ce09222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  health: {fileID: 4437279418911098394}
+  damage: 1
+--- !u!114 &4437279418911098394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9081966238130550939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c44e950288d8c42bf27d584f93263d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  explosionPrefab: {fileID: 5477378031773382919, guid: 666974e5a3363b14e85d1a713c2a39f0,
+    type: 3}
+  defaultHealthPoint: 3
 --- !u!50 &7751100204438973980
 Rigidbody2D:
   serializedVersion: 5
