@@ -16,4 +16,4 @@ public class Blinking : MonoBehaviour
     {
         spriteRenderer.enabled = !spriteRenderer.enabled;
     }
-}
+}    
